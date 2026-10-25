@@ -29,7 +29,7 @@
   * Foreign key `orders.restaurant_id` references `restaurants.restaurant_id`.
 
 * **Entity-Relationship Diagram (ERD):**
-![ERD](erd.png)
+![ERD](erd.png.png)
 
 ---
 
