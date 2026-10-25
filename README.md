@@ -95,6 +95,7 @@ Q1.2: Conditional Data Retrieval
 Objective: Retrieve delivery orders exceeding 15,000 RWF.
 
 SQL Statement: SELECT * FROM orders WHERE total_amount > 15000.00;
+<img src="SELECT_output.png" alt="SELECT Result" width="100%">
 
 Explanation: Filters orders based on a total price condition.
 
@@ -142,6 +143,7 @@ SELECT o.order_id, c.full_name, r.name AS restaurant_name, o.total_amount, o.ord
 FROM orders o 
 INNER JOIN customers c ON o.customer_id = c.customer_id 
 INNER JOIN restaurants r ON o.restaurant_id = r.restaurant_id;
+<img src="JOIN_output.png" alt="SELECT Result" width="100%">
 Explanation: Combines three tables to generate a comprehensive business report.
 
 5.3 UPDATE Tasks
@@ -172,7 +174,7 @@ Objective: Apply a 10% discount to orders greater than 20,000 RWF.
 SQL Statement: UPDATE orders SET total_amount = total_amount * 0.90 WHERE total_amount > 20000.00;
 
 Verification Query: SELECT * FROM orders;
-
+<img src="UPDATE_output.png" alt="SELECT Result" width="100%">
 Explanation: Modifies column values based on a promotional business logic rule.
 
 5.4 ALTER TABLE Tasks
@@ -218,6 +220,7 @@ Q5.2: Insert Multiple Records
 Objective: Insert multiple new restaurants simultaneously.
 
 SQL Statement: INSERT INTO restaurants (name, category, city) VALUES ('Zaaffran', 'Indian', 'Kigali City'), ('Meze Fresh', 'Mexican', 'Kigali City');
+<img src="INSERTINTO_output.png" alt="SELECT Result" width="100%">
 
 Q5.3: Insert a Related Record
 
