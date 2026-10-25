@@ -143,7 +143,7 @@ SELECT o.order_id, c.full_name, r.name AS restaurant_name, o.total_amount, o.ord
 FROM orders o 
 INNER JOIN customers c ON o.customer_id = c.customer_id 
 INNER JOIN restaurants r ON o.restaurant_id = r.restaurant_id;
-<img src="JOIN_output.png" alt="SELECT Result" width="100%">
+![Image Description](JOIN_output.png)
 Explanation: Combines three tables to generate a comprehensive business report.
 
 5.3 UPDATE Tasks
